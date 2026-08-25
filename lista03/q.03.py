@@ -1,5 +1,5 @@
 quantidade_de_horas = float(input("Quantidade de horas por dia:"))
-if quantidade_de_horas <= 1:
+if quantidade_de_horas < 1:
     print("Expectador casual.")
 elif quantidade_de_horas <= 3:
     print("Maratonista iniciante.")
