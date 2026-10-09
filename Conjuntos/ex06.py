@@ -1,0 +1,1 @@
+# Até os acentos gráficos diferenciam os elementos!
