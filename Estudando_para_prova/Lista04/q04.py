@@ -1,0 +1,9 @@
+# Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+F = [1,1]
+n = int(input("Digite um número para que eu converta ele em um elemento da sequência de Fibonacci:"))
+
+for i in range(2, n):
+    F.append(F[i - 1] + F[i - 2])
+print(f"F({n}) = {F[-1]}")
+
+print(f"{F}")
