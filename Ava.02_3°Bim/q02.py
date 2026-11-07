@@ -5,11 +5,11 @@ alunos_tarde = set()
 n_manha = int(input("Quantidade de acessos pela manhã:"))
 for i in range(n_manha):
     matricula = input("Matrícula:")
-    alunos_manha.append(matricula)
+    alunos_manha.add(matricula)
 n_tarde = int(input("Quantidade de acessos pela tarde:"))
 for i in range(n_tarde):
     matricula = input("Matrícula:")
-    alunos_tarde.append(matricula)
+    alunos_tarde.add(matricula)
 
 print(f"Acesso pela manhã: {alunos_manha}")
 print(f"Acessos pela tarde: {alunos_tarde}")
