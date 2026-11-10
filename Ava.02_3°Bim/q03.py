@@ -1,4 +1,4 @@
-# Estrutura: Tupla (não pode ser modificada depois de alterada)
+# Estrutura: Tupla (não pode ser modificada depois de feita)
 # Solução: vou fazer uma lista que guarda tuplas
 
 pontos = []
@@ -12,8 +12,8 @@ print("Pontos Cadastrados:")
 for p in pontos:
     print(f"- {p}")
 
-for i in range(len(3)): # são 3 pontos
-    x, y = pontos[i]
+for i in range(3): # são 3 pontos
+    x, y = pontos[i] # descompactar 
     if x > 0 and y > 0:
         quadrante = 1
     elif x < 0 and y > 0:
@@ -21,11 +21,15 @@ for i in range(len(3)): # são 3 pontos
     elif x < 0 and y < 0:
         quadrante = 3
     elif x > 0 and y < 0:
-        quadrante = 0
+        quadrante = 4
+    else:
+        quadrante = 0 # sobre um dos eixos
 
     print(f"Pontos {pontos[i]}", end= " ")
 
     if quadrante == 0:
         print("Está sobre um dos eixos.")
-    # tem mais código que tenho que adicionar (está no repositório do professor)
+    else:
+        print(f"está no {quadrante}º quadrante.")
+    
     
