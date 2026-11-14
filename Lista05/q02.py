@@ -4,7 +4,7 @@ situacoes = [0, 0, 0] # 0 -> aprovados, 1 -> provas finais, 2 - > reprovados
 
 for aluno in range(1, n+1): # 1...n sem excluir
     print(f"== Aluno {aluno} ==") # +1 serve para começar a contagem em 1
-    nota1 = int(input("\tNota 1:")) # \t serve para organização
+    nota1 = int(input("\tNota 1:")) # \t serve para dar recuo
     nota2 = int(input("\tNota 2:"))
     media = (nota1 + nota2) / 2 
     medias.append(media)
@@ -32,7 +32,7 @@ print(f"Menor média = {min(medias):.0f}")
 print(f"Média geral = {media_geral:.0f}")
 print(f"Aprovados: {situacoes[0]}")
 print(f"Prova Final: {situacoes[1]}")
-print(f"Rerovados: {situacoes[2]}")
+print(f"Reprovados: {situacoes[2]}")
 print(f"Percentual de aprovados: {percentual_aprovados:.1f}%")
 print(f"Médias em ordem decrescente: {sorted(medias, reverse=True)}")
 # reverse=True imprime ao contrário
